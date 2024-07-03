@@ -1,0 +1,12 @@
+{%if is_aunthenticated%}
+<h1>Hello {{name}}</h1>
+{%else%}
+<h1>Hello User</h1>
+{%endif%} {%for x in list_content %}
+<h2>{{x}}</h2>
+{% endfor %}
+
+<h2>{{class_content.x}}</h2>
+
+<h1>Filters</h1>
+{{list_content|length}} {{list_content|length_is:'2'}}
